@@ -1,0 +1,16 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+
+
+    <ion-list class="item-remove-animate item-avatar item-icon-right" >
+      <ion-item ng-repeat="p in products" href="#/tab/detail/{{p.id}}">
+        <img ng-src="{{p.poster}}" alt="">
+        <h2>{{p.name}}</h2>
+        <p>{{p.desc}}</p>
+        <p>${{p.price}}</p>
+      </ion-item>
+    </ion-list>
+
+
+  </ion-content>
+</ion-view>
